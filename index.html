@@ -17,7 +17,7 @@
             <input type="text" v-model="newTask" placeholder="Inserisci una nuova task">
             <button @click="aggiungiTask">aggiungi task</button>
     
-            <div v-if="tasks.length === 0 "></div>
+            <div v-if="tasks.length === 0 ">La tua lista è vuota</div>
 
             <ul>
                 <li v-for="(task, i) in tasks" :key= "i" :class="task.done === true ? 'textline' : '' ">

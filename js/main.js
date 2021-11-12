@@ -4,7 +4,7 @@ var elencoTask = new Vue ({
 
     data : {
 
-        newTask ="",
+        newTask : "",
 
         tasks: [
 
@@ -46,7 +46,11 @@ var elencoTask = new Vue ({
         aggiungiTask(){
 
             this.tasks.push(this.newTask);
-            this.newTask = "";
+            this.newTask = {
+                text: "",
+                done: false
+
+            }
         }
     }
 });
