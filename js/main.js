@@ -4,6 +4,8 @@ var elencoTask = new Vue ({
 
     data : {
 
+        newTask ="",
+
         tasks: [
 
             {
@@ -31,7 +33,20 @@ var elencoTask = new Vue ({
                 done: true
             }
         ]
-    }
+    },
     
-}
-);
+    methods: {
+        rimuoviTask(index){
+
+            this.tasks.splice(index, 1);
+
+        },
+
+
+        aggiungiTask(){
+
+            this.tasks.push(this.newTask);
+            this.newTask = "";
+        }
+    }
+});

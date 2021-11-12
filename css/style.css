@@ -19,3 +19,9 @@
 .textline {
     text-decoration: line-through;
 }
+
+.trash {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
