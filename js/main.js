@@ -1,6 +1,6 @@
 var elencoTask = new Vue ({
 
-    el = "#myApp",
+    el : "#myApp",
 
     data : {
 
@@ -30,7 +30,6 @@ var elencoTask = new Vue ({
                 text: "uscire il cane",
                 done: true
             }
-
         ]
     }
     
