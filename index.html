@@ -20,9 +20,9 @@
             <div v-if="tasks.length === 0 "></div>
 
             <ul>
-                <li v-for="task, i in tasks" :key= "i" :class="task.done === true ? 'textline' : '' ">
+                <li v-for="(task, i) in tasks" :key= "i" :class="task.done === true ? 'textline' : '' ">
                     <span>{{task.text}}</span>
-                    <span class="trash" @click="rimuiviTask(i)"><i class="fas fa-trash-alt"></i></span>
+                    <span class="trash" @click="rimuoviTask(i)"><i class="fas fa-trash-alt"></i></span>
                 </li>
             </ul>
         </div>
