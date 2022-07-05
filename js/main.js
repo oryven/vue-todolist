@@ -45,6 +45,19 @@ var elencoTask = new Vue ({
 
         },
 
+        addLine(index){
+
+            if(this.tasks[index].done === false){
+
+                this.tasks[index].done = true;
+
+            } else {
+
+                    this.tasks[index].done = false;
+
+                }
+        },
+
 
         aggiungiTask(){
 
